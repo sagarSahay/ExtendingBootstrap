@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music site</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/pdsa-sidebar.css" rel="stylesheet" />
+    <style>
+        .pdsa-summary-block{
+            position: relative;
+            width:100%;
+            margin:0.3em;
+            padding: 1em;
+            min-height: 15em;
+            background-color: #428bca;
+            color: #fff;
+        }
+
+        .pdsa-summary-block .summary-background i,
+        .pdsa-summary-block .summary-background div{
+            margin-left: -0.4em;
+            margin-top: 0.1em;
+            font-size: 8em;
+            opacity: 0.3;
+        }
+
+        .pdsa-summary-block .summary-body {
+            position: absolute;
+            top:1.3em;
+            right:0.8em;
+        }
+
+        .pdsa-summary-block .summary-body .summary-line-1{
+            text-align: right;
+            font-size: xx-large;
+        }
+        .pdsa-summary-block .summary-body .summary-line-2{
+            text-align: right;
+            font-size: medium   ;
+        }
+
+        .pdsa-summary-block .summary-footer{
+            position: absolute;
+            background-color: blue;
+            bottom: 0em;
+            right:0em;
+            width: 100%;
+            padding: 0.4em;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: small;
+            opacity: 0.6;
+        }
+
+        .pdsa-summary-block .summary-footer a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .pdsa-summary-block .summary-footer:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <header>
+            <a href="default.html">My Tunes</a>
+        </header>
+        <nav id="sideNavParent" class="pdsa-sn-wrapper">
+            <ul>
+                <li class="pdsa-sn-brand">
+                    <a href="default.html" class="visible-sm visible-md visible-lg ">Music</a>
+                </li>
+                <li>
+                    <a href="default.html">
+                        <span class="visible-sm visible-md visible-lg ">
+                            Home
+                        </span>
+                        <i class="glyphicon glyphicon-home visible-xs"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visible-sm visible-md visible-lg "
+                              data-toggle="collapse"
+                              data-target="#ulGenres">Genres&nbsp;<b class="caret"></b> </span>
+                        <i class="glyphicon glyphicon-globe visible-xs"></i>
+                    </a>
+                    <div class="visible-sm visible-md visible-lg">
+                        <ul id="ulGenres" class="collapse" data-parent="#sideNavParent">
+                            <li>
+                                <a href="#">All Genres</a>
+                            </li>
+                            <li>
+                                <a href="#">Jazz</a>
+                            </li>
+                            <li>
+                                <a href="#">Country</a>
+                            </li>
+                            <li>
+                                <a href="#">Rock</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ulPlaylists">
+                        <span class="visible-sm visible-md visible-lg ">Playlists&nbsp;<b class="caret"></b></span>
+                        <i class="glyphicon glyphicon-list-alt visible-xs"></i>
+                    </a>
+                    <div class="visible-sm visible-md visible-lg">
+                        <ul id="ulPlaylists" class="collapse" data-parent="#sideNavParent">
+                            <li>
+                                <a href="#">All Playlists</a>
+                            </li>
+                            <li>
+                                <a href="#">My Top Rated</a>
+                            </li>
+                            <li>
+                                <a href="#">Top Country</a>
+                            </li>
+                            <li>
+                                <a href="#">Top Classic Rock</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visible-sm visible-md visible-lg ">Songs</span>
+                        <i class="glyphicon glyphicon-music visible-xs"></i>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visible-sm visible-md visible-lg ">Downloads</span>
+                        <i class="glyphicon glyphicon-download visible-xs"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+</div>
+
+<div class="container body-content">
+
+    <div class="row">
+        <div class ="col-xs-10 col-sm-4">
+            <div class="pdsa-summary-block">
+                <div class="summary-background">
+                    <i class="glyphicon glyphicon-globe"></i>
+                </div>
+                <div class="summary-body">
+                    <div class="summary-line-1">14</div>
+                    <div class="summary-line-2">Genres</div>
+                </div>
+                <div class="summary-footer">
+                    <a href="#">View Genres
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class ="col-xs-10 col-sm-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class ="col-xs-10 col-sm-4">
+
+        </div>
+        <div class ="col-xs-10 col-sm-4">
+
+        </div>
+    </div>
+</div>
+
+<script src="jquery/jquery-1.11.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
